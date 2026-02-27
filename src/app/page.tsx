@@ -35,7 +35,7 @@ export default function Home() {
 
         <div className="border-t border-[#083a3f]/10 my-6" />
 
-        <div className="inline-flex flex-col sm:flex-row gap-10 sm:gap-20 text-left">
+        <div className="inline-flex flex-col sm:flex-row gap-4 sm:gap-20 text-left">
           <div className="space-y-4">
             <Link
               href="/projects"
