@@ -10,6 +10,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Siddhesh Darak",
   description: "Personal website of Siddhesh Darak",
+  icons: {
+    icon: "/icon.png?v=2",
+    apple: "/icon.png?v=2",
+  },
 };
 
 export default function RootLayout({
