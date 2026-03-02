@@ -49,15 +49,7 @@ export default function Home() {
             >
               &gt; my story
             </Link>
-            {/* USER REQUESTED TO HIDE 'my thoughts' BUT NOT DELETE */}
-            {/* <a
-              href="https://substack.com/@siddarak"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-lg hover:opacity-60 transition-opacity"
-            >
-              &gt; my thoughts
-            </a> */}
+
             <Link
               href="/resume"
               className="block text-lg hover:opacity-60 transition-opacity"
@@ -75,15 +67,7 @@ export default function Home() {
             >
               &gt; linkedin
             </a>
-            {/* USER REQUESTED TO HIDE 'x.com' BUT NOT DELETE */}
-            {/* <a
-              href="https://x.com/daraksiddhesh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-lg hover:opacity-60 transition-opacity"
-            >
-              &gt; x.com
-            </a> */}
+
             <a
               href="https://www.instagram.com/daraksiddhesh/"
               target="_blank"

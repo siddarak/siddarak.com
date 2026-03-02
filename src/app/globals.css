@@ -1,13 +1,1 @@
 @import "tailwindcss";
-
-@theme {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
-@layer base {
-  :root {
-    --background: #fff0df;
-    --foreground: #083a3f;
-  }
-}
