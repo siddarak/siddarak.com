@@ -5,12 +5,7 @@ const timeline = [
         year: "2025",
         entries: [
             <>
-                starting my <strong>MS at Cornell</strong> — Applied Information Science
-                & Information Systems with a Health Tech focus.{" "}
-                <strong>merit scholarship</strong> recipient.
-            </>,
-            <>
-                moved to <strong>new york city</strong>. researcher at{" "}
+                researcher at{" "}
                 <a
                     href="https://matteroftechlab.org"
                     target="_blank"
@@ -22,10 +17,13 @@ const timeline = [
                 .
             </>,
             <>
-                left <strong>ZS Associates</strong> after a year of building anomaly
-                detection systems, migrating platforms serving{" "}
-                <strong>3,000+ pharmaceutical reps</strong>, and processing{" "}
-                <strong>2M+ records</strong> on AWS EMR.
+                starting my <strong>MS at Cornell</strong> — Applied Information Science
+                & Information Systems with a Health Tech focus.
+            </>,
+            <>moved to <strong>new york city</strong>.</>,
+            <>
+                left <strong>ZS Associates</strong> — supported incentive compensation
+                systems for pharma clients in the GLP-1 and weight loss therapeutics space.
             </>,
         ],
     },
@@ -85,10 +83,6 @@ const timeline = [
                 </a>{" "}
                 in IJRASET.
             </>,
-            <>
-                started at <strong>UAS NMIMS</strong> — VTOL prototyping,
-                swarm simulations, autonomous flight planning.
-            </>,
         ],
     },
     {
@@ -96,8 +90,9 @@ const timeline = [
         entries: [
             <>
                 started <strong>B.Tech at NMIMS University</strong> (MPSTME, Shirpur).
-                elected <strong>campus representative</strong> — representing 1,800
-                students.
+            </>,
+            <>
+                joined <strong>UAS NMIMS</strong>.
             </>,
             <>
                 Finished class XII at <strong>Rajhansa Vidyalaya</strong>, Mumbai.
