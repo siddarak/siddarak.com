@@ -98,13 +98,13 @@ const timeline = [
         year: "2020",
         entries: [
             <>
-                started <strong>B.Tech at NMIMS University</strong> (MPSTME, Shirpur).
+                started <strong>Bachelors in Computer Engineering</strong> at NMIMS University (MPSTME, Shirpur).
             </>,
             <>
                 joined <strong>UAS NMIMS</strong>.
             </>,
             <>
-                Finished class XII at <strong>Rajhansa Vidyalaya</strong>, Mumbai.
+                Finished class XII at <strong>Rajhans Vidyalaya</strong>, Mumbai.
             </>,
         ],
     },
