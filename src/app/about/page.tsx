@@ -50,7 +50,16 @@ const timeline = [
             <>
                 built an <strong>ASL recognition system</strong> — classified 29
                 alphabets using Random Forest on <strong>87,000+ images</strong>.
-                published my first paper at <strong>ICIVC 2023</strong>.
+                published my first paper at{" "}
+                <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-031-71391-0_23"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-[#083a3f]/30 underline-offset-2 hover:opacity-60 transition-opacity"
+                >
+                    ICIVC 2023
+                </a>
+                .
             </>,
             <>
                 interned at <strong>IBM / Phemsoft</strong> — built a market basket
@@ -110,12 +119,32 @@ const timeline = [
 ];
 
 const otherThings = [
-    "president — UAS NMIMS (unmanned aerial systems R&D, Jun 2020 – May 2024)",
-    "campus representative — MPSTME student council (1,800 students)",
-    "president — \"saturday 10AM@NMIMS\" (industry engagement sessions, Aug 2021 – May 2024)",
-    "corporate relations head — Protsahan'23 (NMIMS cultural fest)",
-    "IBM AI/ML graduate — NLP, pattern & anomaly detection, applied ML",
-    "AWS, PwC, Accenture, HP certified",
+    <>president — UAS NMIMS (unmanned aerial systems R&D, Jun 2020 – May 2024)</>,
+    <>campus representative — MPSTME student council (1,800 students)</>,
+    <>president — &quot;saturday 10AM@NMIMS&quot; (industry engagement sessions, Aug 2021 – May 2024)</>,
+    <>corporate relations head — Protsahan&apos;23 (NMIMS cultural fest)</>,
+    <>
+        <a
+            href="https://www.credly.com/badges/c5eab0bd-afec-4ab3-b295-be594ae2f93d"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-[#083a3f]/30 underline-offset-2 hover:opacity-60 transition-opacity"
+        >
+            IBM AI/ML graduate
+        </a>
+        {" "}— NLP, pattern & anomaly detection, applied ML
+    </>,
+    <>
+        <a
+            href="https://www.credly.com/users/siddhesh-darak.603abb49/badges#credly"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-[#083a3f]/30 underline-offset-2 hover:opacity-60 transition-opacity"
+        >
+            AWS
+        </a>
+        , PwC, Accenture, HP
+    </>,
 ];
 
 export default function AboutPage() {
@@ -160,9 +189,9 @@ export default function AboutPage() {
                     Other Things
                 </h2>
                 <ul className="space-y-2.5">
-                    {otherThings.map((item) => (
+                    {otherThings.map((item, i) => (
                         <li
-                            key={item}
+                            key={i}
                             className="text-sm text-[#083a3f]/60 leading-relaxed"
                         >
                             • {item}
