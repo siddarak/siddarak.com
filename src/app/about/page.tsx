@@ -33,19 +33,16 @@ const timeline = [
         year: "2024",
         entries: [
             <>
-                graduated <strong>B.Tech in Computer Engineering</strong> from NMIMS
-                University as <strong>batch topper</strong> — highest CGPA through 7
-                semesters (3.89/4 WES evaluated).
-            </>,
-            <>
-                interned at <strong>Montran Corporation</strong> — consulted commercial
-                banks on ISO 20022 migration for RTGS/NEFT/IMPS systems. successfully{" "}
-                <strong>onboarded 4 banks globally</strong>.
-            </>,
-            <>
                 started full-time at <strong>ZS Associates</strong> in Pune as a
-                Technology Solution Consulting Associate. pharma incentive compensation,
-                ML, data engineering.
+                Technology Solution Consulting Associate.
+            </>,
+            <>
+                graduated <strong>B.Tech in Computer Engineering</strong> from NMIMS
+                University (3.89/4).
+            </>,
+            <>
+                worked as <strong>Presales Intern at Montran Corporation</strong> —
+                payment infrastructure.
             </>,
         ],
     },
@@ -66,10 +63,6 @@ const timeline = [
                 <strong>precision agriculture</strong> — drone-based tree counting with
                 YOLOv5s deep learning. <strong>95% accuracy across 500+ farmlands</strong>
                 .
-            </>,
-            <>
-                led <strong>Ambiora&apos;23</strong> corporate outreach — secured ₹50K+
-                in sponsorships for NMIMS&apos;s technical fest.
             </>,
         ],
     },
@@ -93,12 +86,8 @@ const timeline = [
                 in IJRASET.
             </>,
             <>
-                started <strong>UAS NMIMS</strong> drone projects — VTOL prototyping,
+                started at <strong>UAS NMIMS</strong> — VTOL prototyping,
                 swarm simulations, autonomous flight planning.
-            </>,
-            <>
-                became <strong>head of Ganesh Utsav Mandal</strong> — organized a 5-day
-                campus festival at NMIMS.
             </>,
         ],
     },
@@ -111,17 +100,15 @@ const timeline = [
                 students.
             </>,
             <>
-                qualified for the <strong>Regional Mathematical Olympiad (RMO)</strong>.
+                Finished class XII at <strong>Rajhansa Vidyalaya</strong>, Mumbai.
             </>,
-            <>class XII CBSE — 81.8% from Rajhansa Vidyalaya, Mumbai.</>,
         ],
     },
     {
         year: "2018",
         entries: [
             <>
-                class X ICSE — 86.8% at <strong>Vibgyor High</strong>, Mumbai. vice
-                captain of the football team.
+                Finished class X at <strong>Vibgyor High</strong>, Mumbai.
             </>,
         ],
     },
