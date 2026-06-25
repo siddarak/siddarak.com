@@ -77,11 +77,11 @@ const techStack = {
 
 export default function ProjectsPage() {
     return (
-        <div className="min-h-screen px-6 py-16 selection:bg-[#fff0df] selection:text-[#083a3f]">
+        <div className="min-h-screen px-6 py-16 selection:bg-[#ebf2fa] selection:text-[#45111d]">
             <div className="w-full max-w-[640px] mx-auto">
                 <Link
                     href="/"
-                    className="text-sm text-[#083a3f]/50 hover:text-[#083a3f] transition-colors"
+                    className="text-sm text-[#45111d]/50 hover:text-[#45111d] transition-colors"
                 >
                     ← back to home
                 </Link>
@@ -92,7 +92,7 @@ export default function ProjectsPage() {
 
                 <div>
                     {projects.map((project) => (
-                        <div key={project.title} className="border-b border-[#083a3f]/10 pb-8 mb-8 last:border-0 last:mb-0">
+                        <div key={project.title} className="border-b border-[#45111d]/10 pb-8 mb-8 last:border-0 last:mb-0">
                             <div className="flex items-baseline justify-between gap-4">
                                 <h3 className="text-base font-semibold">{project.title}</h3>
                                 {project.link ? (
@@ -100,24 +100,24 @@ export default function ProjectsPage() {
                                         href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-xs text-[#083a3f]/40 hover:text-[#083a3f] transition-colors whitespace-nowrap"
+                                        className="text-xs text-[#45111d]/40 hover:text-[#45111d] transition-colors whitespace-nowrap"
                                     >
                                         {project.linkLabel || "github"} →
                                     </a>
                                 ) : (
-                                    <span className="text-xs text-[#083a3f]/25 whitespace-nowrap">
+                                    <span className="text-xs text-[#45111d]/25 whitespace-nowrap">
                                         {project.date}
                                     </span>
                                 )}
                             </div>
-                            <p className="text-sm text-[#083a3f]/60 mt-2 leading-relaxed">
+                            <p className="text-sm text-[#45111d]/60 mt-2 leading-relaxed">
                                 {project.description}
                             </p>
                             <div className="flex flex-wrap gap-1.5 mt-3">
                                 {project.tags.map((tag) => (
                                     <span
                                         key={tag}
-                                        className="text-[11px] font-mono px-1.5 py-0.5 rounded border border-[#083a3f]/20 text-[#083a3f]/40"
+                                        className="text-[11px] font-mono px-1.5 py-0.5 rounded border border-[#45111d]/20 text-[#45111d]/40"
                                     >
                                         {tag}
                                     </span>
@@ -127,16 +127,16 @@ export default function ProjectsPage() {
                     ))}
                 </div>
 
-                <div className="border-t border-[#083a3f]/10 my-10" />
+                <div className="border-t border-[#45111d]/10 my-10" />
 
-                <h2 className="text-xs font-bold uppercase tracking-widest text-[#083a3f]/40 mb-6">
+                <h2 className="text-xs font-bold uppercase tracking-widest text-[#45111d]/40 mb-6">
                     Tech Stack
                 </h2>
                 <div className="space-y-3">
                     {Object.entries(techStack).map(([category, tools]) => (
                         <div key={category} className="text-sm">
                             <span className="font-bold capitalize">{category}:</span>{" "}
-                            <span className="text-[#083a3f]/60">{tools}</span>
+                            <span className="text-[#45111d]/60">{tools}</span>
                         </div>
                     ))}
                 </div>
@@ -144,7 +144,7 @@ export default function ProjectsPage() {
                 <div className="mt-16 text-center">
                     <Link
                         href="/"
-                        className="text-xs text-[#083a3f]/40 hover:text-[#083a3f] transition-colors"
+                        className="text-xs text-[#45111d]/40 hover:text-[#45111d] transition-colors"
                     >
                         ← back to home
                     </Link>

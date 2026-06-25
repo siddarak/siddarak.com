@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 selection:bg-[#fff0df] selection:text-[#083a3f]">
+    <div className="min-h-screen flex items-center justify-center px-6 selection:bg-[#ebf2fa] selection:text-[#45111d]">
       <div className="w-full max-w-[640px] text-center">
         <div className="flex flex-col items-center">
           <Image
@@ -17,14 +17,14 @@ export default function Home() {
           <h1 className="text-2xl font-bold tracking-tight mt-2">
             Siddhesh Darak
           </h1>
-          <div className="text-base text-[#083a3f]/80 mt-1.5 leading-snug">
+          <div className="text-base text-[#45111d]/80 mt-1.5 leading-snug">
             <p>
               researcher @{" "}
               <a
                 href="https://matteroftechlab.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-60 transition-opacity underline decoration-[#083a3f]/30 underline-offset-2"
+                className="hover:opacity-60 transition-opacity underline decoration-[#45111d]/30 underline-offset-2"
               >
                 matter of tech lab
               </a>
@@ -33,7 +33,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="border-t border-[#083a3f]/10 my-6" />
+        <div className="border-t border-[#45111d]/10 my-6" />
 
         <div className="inline-flex flex-col sm:flex-row gap-4 sm:gap-20 text-left">
           <div className="space-y-4">
