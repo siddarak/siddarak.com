@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 selection:bg-[#bdb9b3] selection:text-[#0d1e3d]">
+    <div className="min-h-screen flex items-center justify-center px-6 selection:bg-[#e0f2fe] selection:text-[#0d1e3d]">
       <div className="w-full max-w-[640px] text-center">
         <div className="flex flex-col items-center">
           <Image

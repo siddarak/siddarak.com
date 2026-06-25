@@ -1,7 +1,7 @@
 # siddarak.com Workspace Rules
 
 ## 🎨 Theme & Colors
-- **Background Color:** Warm Light Grey/Beige (`#bdb9b3`)
+- **Background Color:** Pastel Sky Blue (`#e0f2fe`)
 - **Text Color:** Professional Deep Navy Blue (`#0d1e3d`)
 - Ensure all style changes follow this palette. Avoid introducing older colors like `#ebf2fa` or `#45111d`.
 

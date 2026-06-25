@@ -77,7 +77,7 @@ const techStack = {
 
 export default function ProjectsPage() {
     return (
-        <div className="min-h-screen px-6 py-16 selection:bg-[#bdb9b3] selection:text-[#0d1e3d]">
+        <div className="min-h-screen px-6 py-16 selection:bg-[#e0f2fe] selection:text-[#0d1e3d]">
             <div className="w-full max-w-[640px] mx-auto">
                 <Link
                     href="/"
