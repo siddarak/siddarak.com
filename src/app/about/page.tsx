@@ -10,7 +10,7 @@ const timeline = [
                     href="https://matteroftechlab.org"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline decoration-[#45111d]/30 underline-offset-2 hover:opacity-60 transition-opacity"
+                    className="underline decoration-[#0d1e3d]/30 underline-offset-2 hover:opacity-60 transition-opacity"
                 >
                     matter of tech lab
                 </a>
@@ -55,7 +55,7 @@ const timeline = [
                     href="https://link.springer.com/chapter/10.1007/978-3-031-71391-0_23"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline decoration-[#45111d]/30 underline-offset-2 hover:opacity-60 transition-opacity"
+                    className="underline decoration-[#0d1e3d]/30 underline-offset-2 hover:opacity-60 transition-opacity"
                 >
                     ICIVC 2023
                 </a>
@@ -86,7 +86,7 @@ const timeline = [
                     href="https://doi.org/10.22214/ijraset.2022.48213"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline decoration-[#45111d]/30 underline-offset-2 hover:opacity-60 transition-opacity"
+                    className="underline decoration-[#0d1e3d]/30 underline-offset-2 hover:opacity-60 transition-opacity"
                 >
                     &quot;Current Indian Car Market and EV Adaptation&quot;
                 </a>{" "}
@@ -128,7 +128,7 @@ const otherThings = [
             href="https://www.credly.com/badges/c5eab0bd-afec-4ab3-b295-be594ae2f93d"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline decoration-[#45111d]/30 underline-offset-2 hover:opacity-60 transition-opacity"
+            className="underline decoration-[#0d1e3d]/30 underline-offset-2 hover:opacity-60 transition-opacity"
         >
             IBM AI/ML graduate
         </a>
@@ -139,7 +139,7 @@ const otherThings = [
             href="https://www.credly.com/users/siddhesh-darak.603abb49/badges#credly"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline decoration-[#45111d]/30 underline-offset-2 hover:opacity-60 transition-opacity"
+            className="underline decoration-[#0d1e3d]/30 underline-offset-2 hover:opacity-60 transition-opacity"
         >
             AWS
         </a>
@@ -149,11 +149,11 @@ const otherThings = [
 
 export default function AboutPage() {
     return (
-        <div className="min-h-screen px-6 py-16 selection:bg-[#ebf2fa] selection:text-[#45111d]">
+        <div className="min-h-screen px-6 py-16 selection:bg-[#bdb9b3] selection:text-[#0d1e3d]">
             <div className="w-full max-w-[640px] mx-auto">
                 <Link
                     href="/"
-                    className="text-sm text-[#45111d]/50 hover:text-[#45111d] transition-colors"
+                    className="text-sm text-[#0d1e3d]/50 hover:text-[#0d1e3d] transition-colors"
                 >
                     ← back to home
                 </Link>
@@ -165,16 +165,16 @@ export default function AboutPage() {
                 {timeline.map((block, blockIdx) => (
                     <div key={block.year}>
                         {blockIdx > 0 && (
-                            <div className="border-t border-[#45111d]/10 my-10" />
+                            <div className="border-t border-[#0d1e3d]/10 my-10" />
                         )}
-                        <h2 className="text-xs font-bold uppercase tracking-widest text-[#45111d]/40 mb-6">
+                        <h2 className="text-xs font-bold uppercase tracking-widest text-[#0d1e3d]/40 mb-6">
                             {block.year}
                         </h2>
                         <div className="space-y-4">
                             {block.entries.map((entry, entryIdx) => (
                                 <p
                                     key={entryIdx}
-                                    className="text-sm text-[#45111d]/80 leading-relaxed"
+                                    className="text-sm text-[#0d1e3d]/80 leading-relaxed"
                                 >
                                     {entry}
                                 </p>
@@ -183,16 +183,16 @@ export default function AboutPage() {
                     </div>
                 ))}
 
-                <div className="border-t border-[#45111d]/10 my-10" />
+                <div className="border-t border-[#0d1e3d]/10 my-10" />
 
-                <h2 className="text-xs font-bold uppercase tracking-widest text-[#45111d]/40 mb-6">
+                <h2 className="text-xs font-bold uppercase tracking-widest text-[#0d1e3d]/40 mb-6">
                     Other Things
                 </h2>
                 <ul className="space-y-2.5">
                     {otherThings.map((item, i) => (
                         <li
                             key={i}
-                            className="text-sm text-[#45111d]/60 leading-relaxed"
+                            className="text-sm text-[#0d1e3d]/60 leading-relaxed"
                         >
                             • {item}
                         </li>
@@ -202,7 +202,7 @@ export default function AboutPage() {
                 <div className="mt-16 text-center">
                     <Link
                         href="/"
-                        className="text-xs text-[#45111d]/40 hover:text-[#45111d] transition-colors"
+                        className="text-xs text-[#0d1e3d]/40 hover:text-[#0d1e3d] transition-colors"
                     >
                         ← back to home
                     </Link>

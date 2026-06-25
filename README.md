@@ -10,9 +10,9 @@ This repository contains the source code for my personal website, built with a f
 - **Domain:** IONOS
 
 ## 🎨 Design System & Aesthetics
-- **Theme:** Cool, approach-able, and minimal pastel theme.
-- **Background Color:** Pastel Light Blue (`#ebf2fa`)
-- **Text Color:** Professional Deep Burgundy (`#45111d`)
+- **Theme:** Warm, minimal, and professional theme.
+- **Background Color:** Warm Light Grey/Beige (`#bdb9b3`)
+- **Text Color:** Professional Deep Navy Blue (`#0d1e3d`)
 - **Typography:** Geist Sans & Geist Mono
 - **Layout:** Centered single column with a max-width of 640px. Two-column links layout for desktop (`gap-20`), collapsing into a seamless single vertical list on mobile.
 - **Image:** `my-profile.jpg` (Custom cropped with CSS `object-top` to focus tightly on the face).

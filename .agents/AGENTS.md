@@ -1,9 +1,9 @@
 # siddarak.com Workspace Rules
 
 ## 🎨 Theme & Colors
-- **Background Color:** Pastel Light Blue (`#ebf2fa`)
-- **Text Color:** Professional Deep Burgundy (`#45111d`)
-- Ensure all style changes follow this palette. Avoid introducing dark teal (`#083a3f`) or creme (`#fff0df`).
+- **Background Color:** Warm Light Grey/Beige (`#bdb9b3`)
+- **Text Color:** Professional Deep Navy Blue (`#0d1e3d`)
+- Ensure all style changes follow this palette. Avoid introducing older colors like `#ebf2fa` or `#45111d`.
 
 ## 🖼️ Profile Photo
 - The active profile photo is stored at [public/my-profile.jpg](file:///Users/siddheshdarak/Documents/VS%20CODE/siddarak.com/public/my-profile.jpg).
