@@ -1,0 +1,13 @@
+---
+description: Campaign UI — Robbie poster layout, pine/punch colors, no copy invention. Studio at /campaign/studio.
+globs: src/app/campaign/**/*.{tsx,css},DESIGN.md
+alwaysApply: false
+---
+
+# Campaign UI
+
+- Read `DESIGN.md` then `CAMPAIGN-COPY.md`. Paint the copy; do not rewrite it.
+- Do not touch `/`, `/about`, `/projects`.
+- Default: **Pine + Punch (locked)**. Tune only if Sid unlocks it. Studio still shows the other two as rejects.
+- Funky/artistic only inside a formal candidate poster (condensed name, vote chip, high contrast).
+- No extra product features (forms, 100-day plans) unless the hub chat asks.

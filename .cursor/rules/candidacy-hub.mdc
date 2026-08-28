@@ -1,0 +1,33 @@
+---
+description: Candidacy is the homepage; CANDIDACY.md is shared campaign memory. Do not invent claims or a second voice.
+alwaysApply: true
+---
+
+# Candidacy hub
+
+This repo’s campaign is a **reversible route** on siddarak.com. Personal `/` stays until we swap.
+
+**Two jobs, two files**
+
+- Copy / WhatsApp / facts: `CAMPAIGN-COPY.md` + **this hub chat only**. Do not invent claims.
+- Look / color / layout: `DESIGN.md` + `/campaign/studio`. Palette locked: **Pine + Punch**. Do not rewrite copy.
+
+Public undergrad title: **General Secretary** (same office as campus representative). Vote **Sep 2–5**. Name: **Sid Darak** / Siddhesh Darak.
+
+### Satellite chats (paste into New Chat)
+
+This hub is intake. Do not build UI or posters here.
+
+**UI — campaign page**
+
+```
+You are the campaign UI agent for siddarak.com. Read DESIGN.md and CAMPAIGN-COPY.md first. Do not rewrite copy. Do not touch /, /about, /projects.
+
+Replace the /campaign placeholder with the real Robbie-shaped poster page (sticky vote, hero, 3 cards, why, about, closer, footer). Palette is locked Pine + Punch (hexes in DESIGN.md). Keep /campaign/studio. Headshot: placeholder unless Sid has approved /my-profile.jpg. Verify in the browser.
+```
+
+**Poster / print (when we have photos)**
+
+```
+You are the campaign collateral agent. Read CAMPAIGN-COPY.md (Poster section) and DESIGN.md. Pine + Punch only. Same slogan and name system. Do not invent new claims. Produce poster layout for print/story, not a new website.
+```

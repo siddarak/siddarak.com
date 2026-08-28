@@ -1,0 +1,356 @@
+/* Print collateral — Pine + Punch, same system as /campaign */
+
+.poster-root {
+  --pine: #0f3d32;
+  --pine-deep: #07241e;
+  --punch: #f23d7a;
+  --punch-dark: #c41e5a;
+  --paper: #fff7f4;
+  --ink: #10211c;
+  --slogan-hot: #ffc2d4;
+  min-height: 100dvh;
+  background: var(--pine-deep);
+  color: var(--paper);
+  font-family: var(--font-campaign-body), system-ui, sans-serif;
+}
+
+.poster-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  padding: 16px 20px;
+  background: var(--pine);
+  border-bottom: 3px solid var(--punch);
+}
+
+.poster-toolbar p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0.92;
+  flex: 1 1 220px;
+}
+
+.poster-toolbar button {
+  font-family: var(--font-campaign-display), Impact, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 16px 8px;
+  font-size: 14px;
+}
+
+.poster-toolbar .print-btn {
+  background: var(--punch);
+  color: var(--pine-deep);
+}
+
+.poster-toolbar .size-btn {
+  background: transparent;
+  color: var(--paper);
+  border: 2px solid color-mix(in srgb, var(--paper) 55%, transparent);
+}
+
+.poster-toolbar .size-btn[aria-pressed="true"] {
+  background: var(--paper);
+  color: var(--pine);
+  border-color: var(--paper);
+}
+
+.poster-stage {
+  display: flex;
+  justify-content: center;
+  padding: 28px 16px 48px;
+}
+
+.poster-sheet {
+  --sheet-w: 11in;
+  --sheet-h: 17in;
+  --pad: 0.55in;
+  --name: 2.35in;
+  --slogan: 0.42in;
+  --office: 0.22in;
+  --chip: 0.28in;
+  position: relative;
+  width: var(--sheet-w);
+  height: var(--sheet-h);
+  background: var(--pine);
+  color: var(--paper);
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgb(0 0 0 / 0.4);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.poster-sheet[data-size="letter"] {
+  --sheet-w: 8.5in;
+  --sheet-h: 11in;
+  --pad: 0.38in;
+  --name: 1.42in;
+  --slogan: 0.28in;
+  --office: 0.155in;
+  --chip: 0.2in;
+}
+
+.poster-stripe {
+  position: absolute;
+  right: -12%;
+  top: -18%;
+  bottom: -22%;
+  width: 46%;
+  background: var(--punch);
+  transform: skewX(-14deg);
+  pointer-events: none;
+}
+
+.poster-rule {
+  position: absolute;
+  right: 32%;
+  top: -18%;
+  bottom: -22%;
+  width: 0.14in;
+  background: var(--paper);
+  transform: skewX(-14deg);
+  pointer-events: none;
+}
+
+.poster-body {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-rows: 1fr auto;
+  padding: var(--pad);
+  gap: 0.2in;
+}
+
+.poster-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 0.2in;
+  min-width: 0;
+}
+
+.poster-name {
+  font-family: var(--font-campaign-display), Impact, sans-serif;
+  text-transform: uppercase;
+  font-size: var(--name);
+  line-height: 0.82;
+  margin: 0;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  text-shadow: 0.06em 0.06em 0 color-mix(in srgb, var(--pine-deep) 72%, transparent);
+}
+
+.poster-for {
+  font-family: var(--font-campaign-script), cursive;
+  font-size: calc(var(--office) * 2.1);
+  margin: 0.06in 0 0.02in;
+  color: var(--slogan-hot);
+  line-height: 1;
+}
+
+.poster-office {
+  font-family: var(--font-campaign-body), system-ui, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: var(--office);
+  margin: 0;
+}
+
+.poster-slogan {
+  font-family: var(--font-campaign-display), Impact, sans-serif;
+  text-transform: uppercase;
+  font-size: var(--slogan);
+  line-height: 0.95;
+  margin: 0.28in 0 0;
+  max-width: 12ch;
+}
+
+.poster-slogan em {
+  font-style: normal;
+  color: var(--slogan-hot);
+}
+
+.poster-frame-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0.55in 0.08in 0.1in 0;
+}
+
+.poster-frame {
+  width: min(100%, 4.4in);
+  aspect-ratio: 1 / 1;
+  background: var(--paper);
+  padding: 0.12in;
+  box-shadow: 0.12in 0.12in 0 var(--pine-deep);
+}
+
+.poster-sheet[data-size="letter"] .poster-frame {
+  width: min(100%, 2.85in);
+  padding: 0.08in;
+  box-shadow: 0.08in 0.08in 0 var(--pine-deep);
+}
+
+.poster-frame-inner {
+  height: 100%;
+  background: var(--pine-deep) url("/campaign/sid-headshot.png") center 18% / cover no-repeat;
+  border: 0.06in solid var(--punch);
+  position: relative;
+}
+
+.poster-frame-inner::before,
+.poster-frame-inner::after {
+  content: "";
+  position: absolute;
+  width: 0.28in;
+  height: 0.28in;
+  border-color: color-mix(in srgb, var(--paper) 45%, transparent);
+  border-style: solid;
+}
+
+.poster-frame-inner::before {
+  top: 0.18in;
+  left: 0.18in;
+  border-width: 2px 0 0 2px;
+}
+
+.poster-frame-inner::after {
+  right: 0.18in;
+  bottom: 0.18in;
+  border-width: 0 2px 2px 0;
+}
+
+.poster-bar {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: end;
+  gap: 0.2in 0.28in;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0.22in 0.28in 0.2in;
+}
+
+.poster-chip {
+  background: var(--punch);
+  color: var(--pine-deep);
+  font-family: var(--font-campaign-display), Impact, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: var(--chip);
+  padding: 0.14in 0.22in 0.1in;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.poster-meta {
+  margin: 0;
+  font-size: 0.2in;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.poster-sheet[data-size="letter"] .poster-meta {
+  font-size: 0.145in;
+}
+
+.poster-url {
+  margin: 0.04in 0 0;
+  font-family: var(--font-campaign-display), Impact, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.2in;
+  color: var(--pine);
+}
+
+.poster-sheet[data-size="letter"] .poster-url {
+  font-size: 0.145in;
+}
+
+.poster-legal {
+  margin: 0;
+  font-size: 0.12in;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ink) 72%, var(--paper));
+  text-align: right;
+  align-self: end;
+}
+
+.poster-sheet[data-size="letter"] .poster-legal {
+  font-size: 0.1in;
+}
+
+@media (max-width: 900px) {
+  .poster-stage {
+    padding: 16px 12px 32px;
+    overflow-x: auto;
+  }
+
+  .poster-sheet {
+    transform: scale(0.42);
+    transform-origin: top center;
+    margin-bottom: calc(var(--sheet-h) * -0.58);
+  }
+
+  .poster-sheet[data-size="letter"] {
+    transform: scale(0.52);
+    margin-bottom: calc(var(--sheet-h) * -0.48);
+  }
+}
+
+@media print {
+  html,
+  body {
+    background: #0f3d32 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .poster-root {
+    background: none;
+    min-height: 0;
+  }
+
+  .poster-toolbar,
+  .poster-screen-only {
+    display: none !important;
+  }
+
+  .poster-stage {
+    padding: 0;
+    display: block;
+  }
+
+  .poster-sheet {
+    box-shadow: none;
+    transform: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  nextjs-portal {
+    display: none !important;
+  }
+}
+
+@page {
+  size: 11in 17in;
+  margin: 0;
+}
+
+html[data-poster-page="letter"] {
+  @page {
+    size: letter portrait;
+    margin: 0;
+  }
+}

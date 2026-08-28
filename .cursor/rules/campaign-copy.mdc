@@ -1,0 +1,12 @@
+---
+description: Campaign copy lives in CAMPAIGN-COPY.md. Do not invent slogans, titles, or bios.
+globs: CAMPAIGN-COPY.md,CANDIDACY.md
+alwaysApply: false
+---
+
+# Campaign copy
+
+- Source of truth for words: `CAMPAIGN-COPY.md`. Hub context: `CANDIDACY.md`.
+- Public undergrad title: **General Secretary** (same role as campus representative). Constituency: **1,800** students.
+- UI work must not rewrite this copy. If a line must change, edit `CAMPAIGN-COPY.md` in the hub chat first.
+- Do not use Cornell-vs-Stanford headlines, 2,000 students, or Co-President platform language.

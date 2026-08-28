@@ -80,7 +80,7 @@ export default function ProjectsPage() {
         <div className="min-h-screen px-6 py-16 selection:bg-[#e0f2fe] selection:text-[#0d1e3d]">
             <div className="w-full max-w-[640px] mx-auto">
                 <Link
-                    href="/"
+                    href="/me"
                     className="text-sm text-[#0d1e3d]/50 hover:text-[#0d1e3d] transition-colors"
                 >
                     ← back to home
@@ -143,7 +143,7 @@ export default function ProjectsPage() {
 
                 <div className="mt-16 text-center">
                     <Link
-                        href="/"
+                        href="/me"
                         className="text-xs text-[#0d1e3d]/40 hover:text-[#0d1e3d] transition-colors"
                     >
                         ← back to home
